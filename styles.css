@@ -45,3 +45,7 @@ html, body {
 .muted {
     color: #8a8a8a;
 }
+
+.logo {
+    width: 180px;
+}
