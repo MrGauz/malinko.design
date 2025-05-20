@@ -33,3 +33,11 @@ html, body {
     font-family: 'Apparat', Arial, sans-serif;
     font-weight: 400;
 }
+
+.dark-bg {
+    background: #232323;
+}
+
+.accent {
+    color: #ffd600;
+}
