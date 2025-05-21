@@ -34,6 +34,11 @@ html, body {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .dark-bg {
     background: #232323;
 }
@@ -48,4 +53,24 @@ html, body {
 
 .logo {
     width: 180px;
+}
+
+#load-more:hover,
+#load-more:focus {
+    background: #ffd600;
+}
+
+.dashed-divider {
+    border: none;
+    border-top: 5px dashed #000;
+    opacity: 0.9;
+}
+
+.logo-footer {
+    width: 330px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
 }
