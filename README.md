@@ -20,7 +20,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - Bootstrap 5.3.6
 - JavaScript
 
-## Setup
+## TODO: Setup 
 
 1. Clone the repository
 2. Open `index.html` in your web browser
