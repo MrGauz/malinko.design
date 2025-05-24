@@ -8,6 +8,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 ## TODOs
 
 - [ ] Figure out project header responsiveness
+- [ ] Link preview head tags
 
 ## Overview
 
