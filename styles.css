@@ -76,13 +76,17 @@ a {
     transform: scale(1.01);
 }
 
-.nav-arrow {
-    width: 250px;
+.hidden-card {
+    display: none;
 }
 
 #load-more:hover,
 #load-more:focus {
     background: #ffd600;
+}
+
+.nav-arrow {
+    width: 250px;
 }
 
 .dashed-divider {
