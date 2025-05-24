@@ -43,18 +43,35 @@ a {
     background: #232323;
 }
 
+.logo-navbar {
+    width: 180px;
+}
+
 .active-page,
 .active-page:hover,
 .active-page:focus {
     color: #ffd600;
 }
 
+.image-header {
+    position: relative;
+}
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 1);
+}
+
 .muted {
     color: #8a8a8a;
 }
 
-.logo {
-    width: 180px;
+.nav-arrow {
+    width: 250px;
 }
 
 #load-more:hover,
