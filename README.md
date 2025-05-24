@@ -11,6 +11,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] Link preview head tags
 - [ ] Project page titles?
 - [ ] Alt texts
+- [ ] Link animations
 
 ## Overview
 
