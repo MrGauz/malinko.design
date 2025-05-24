@@ -9,6 +9,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 - [ ] Figure out project header responsiveness
 - [ ] Link preview head tags
+- [ ] Project page titles?
 
 ## Overview
 
