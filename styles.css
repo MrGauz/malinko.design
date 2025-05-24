@@ -95,8 +95,23 @@ a {
     opacity: 0.9;
 }
 
+/* small & below */
 .logo-footer {
+  width: 270px;
+}
+
+/* medium and up */
+@media (min-width: 768px) {
+  .logo-footer {
+    width: 230px;
+  }
+}
+
+/* large and up */
+@media (min-width: 992px) {
+  .logo-footer {
     width: 330px;
+  }
 }
 
 .social-icon {
