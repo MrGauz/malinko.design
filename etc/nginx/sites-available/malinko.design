@@ -1,0 +1,40 @@
+# -------------------------------------------------------------------
+# HTTPS server block
+# -------------------------------------------------------------------
+server {
+    listen       443 ssl;                # managed by Certbot
+    server_name  malinko.gauz.net;
+
+    root         /var/www/gauz.net/malinko/public;
+    index        index.html;
+
+    access_log   /var/log/nginx/malinko.gauz.net_access.log;
+    error_log    /var/log/nginx/malinko.gauz.net_error.log;
+
+    # Serve static files, return 404 if not found
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # SSL configuration (Certbot managed)
+    ssl_certificate           /etc/letsencrypt/live/malinko.gauz.net/fullchain.pem;
+    ssl_certificate_key       /etc/letsencrypt/live/malinko.gauz.net/privkey.pem;
+    include                   /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam               /etc/letsencrypt/ssl-dhparams.pem;
+}
+
+# -------------------------------------------------------------------
+# HTTP → HTTPS redirect
+# -------------------------------------------------------------------
+server {
+    listen      80;
+    server_name malinko.gauz.net;
+
+    # Redirect all traffic to HTTPS
+    if ($host = malinko.gauz.net) {
+        return 301 https://$host$request_uri;
+    }
+
+    # Fallback (should never really be hit)
+    return 404;
+}
