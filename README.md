@@ -5,6 +5,10 @@
 A modern, responsive portfolio website showcasing the work of Malinko Design, featuring a collection of design projects
 across various disciplines including graphic design, industrial design, UX/UI, and more.
 
+## TODOs
+
+- [ ] Figure out project header responsiveness
+
 ## Overview
 
 This portfolio website presents a curated collection of design projects, demonstrating expertise in:
