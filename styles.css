@@ -70,6 +70,12 @@ a {
     color: #8a8a8a;
 }
 
+.card-link:hover,
+.card-link:focus {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.01);
+}
+
 .nav-arrow {
     width: 250px;
 }
