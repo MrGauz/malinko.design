@@ -43,7 +43,9 @@ a {
     background: #232323;
 }
 
-.active-page {
+.active-page,
+.active-page:hover,
+.active-page:focus {
     color: #ffd600;
 }
 
