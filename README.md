@@ -14,6 +14,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] Link animations
 - [ ] 404 page
 - [ ] Link to GitHub repo on contacts page
+- [ ] Optimize images
 
 ## Technologies Used
 
