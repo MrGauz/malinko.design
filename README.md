@@ -13,6 +13,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] Alt texts
 - [ ] Link animations
 - [ ] 404 page
+- [ ] Link to GitHub repo on contacts page
 
 ## Technologies Used
 
