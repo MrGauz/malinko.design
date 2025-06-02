@@ -3,19 +3,19 @@
 # -------------------------------------------------------------------
 server {
     listen       443 ssl;
-    server_name  malinko.gauz.net;
+    server_name  malinko.design;
 
     # Hide nginx version
     server_tokens off;
 
-    root         /var/www/gauz.net/malinko/public;
+    root         /var/www/malinko.design/public;
     index        index.html;
 
     # Limit request size
     client_max_body_size 1m;
 
-    access_log   /var/log/nginx/malinko.gauz.net_access.log;
-    error_log    /var/log/nginx/malinko.gauz.net_error.log;
+    access_log   /var/log/nginx/malinko.design_access.log;
+    error_log    /var/log/nginx/malinko.design_error.log;
 
     # Only allow GET/HEAD and block all other methods
     location / {
@@ -27,8 +27,8 @@ server {
     }
 
     # SSL configuration (Certbot managed)
-    ssl_certificate           /etc/letsencrypt/live/malinko.gauz.net/fullchain.pem;
-    ssl_certificate_key       /etc/letsencrypt/live/malinko.gauz.net/privkey.pem;
+    ssl_certificate           /etc/letsencrypt/live/malinko.design/fullchain.pem;
+    ssl_certificate_key       /etc/letsencrypt/live/malinko.design/privkey.pem;
     include                   /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam               /etc/letsencrypt/ssl-dhparams.pem;
 }
@@ -38,8 +38,30 @@ server {
 # -------------------------------------------------------------------
 server {
     listen      80;
-    server_name malinko.gauz.net;
+    server_name malinko.design;
 
     # Redirect all traffic to HTTPS
     return 301 https://$host$request_uri;
+}
+
+# -------------------------------------------------------------------
+# Redirect www.malinko.design → malinko.design
+# -------------------------------------------------------------------
+server {
+    listen       80;
+    server_name  www.malinko.design;
+
+    return 301 https://malinko.design$request_uri;
+}
+
+server {
+    listen       443 ssl;
+    server_name  www.malinko.design;
+
+    ssl_certificate           /etc/letsencrypt/live/www.malinko.design/fullchain.pem;
+    ssl_certificate_key       /etc/letsencrypt/live/www.malinko.design/privkey.pem;
+    include                   /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam               /etc/letsencrypt/ssl-dhparams.pem;
+
+    return 301 https://malinko.design$request_uri;
 }
