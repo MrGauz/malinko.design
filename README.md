@@ -18,6 +18,8 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] Link to GitHub repo on contacts page
 - [ ] Optimize images
 - [ ] README
+- [ ] 3D head
+- [ ] Clear metadata from media files
 
 ## Technologies Used
 
