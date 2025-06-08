@@ -25,7 +25,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 - HTML5
 - CSS3
-- Bootstrap 5.3.6
+- Bootstrap 5.3
 - JavaScript
 
 ## TODO: Setup 

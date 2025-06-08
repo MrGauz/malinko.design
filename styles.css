@@ -59,6 +59,9 @@ a {
 
 .image-header {
     position: relative;
+    min-height: 120px;
+    background-color: black;
+    color: white;
 }
 
 .navbar-overlay {
