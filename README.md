@@ -20,6 +20,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] README
 - [ ] 3D head
 - [ ] Clear metadata from media files
+- [ ] Footer text
 
 ## Technologies Used
 
