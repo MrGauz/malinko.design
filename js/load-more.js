@@ -4,5 +4,5 @@ document
         document
             .querySelectorAll('.hidden-card')
             .forEach(el => el.style.display = 'block');
-        this.style.display = 'none';
+        this.classList.add('d-none');
     });
