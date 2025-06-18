@@ -39,6 +39,10 @@ a {
     color: #000;
 }
 
+footer {
+    margin-top: 13rem;
+}
+
 .dark-bg {
     background: #232323;
 }
@@ -129,4 +133,30 @@ a {
 .social-icon {
     width: 30px;
     height: 30px;
+}
+
+.competence-card-img-with-gif {
+    aspect-ratio: 636 / 391;
+    background: white;
+    overflow: hidden;
+}
+
+/* extra small */
+.competence-partner-logo {
+    max-width: 270px;
+    height: auto;
+}
+
+/* small and above */
+@media (min-width: 576px) {
+    .competence-partner-logo {
+        max-height: 80px;
+        width: auto;
+    }
+
+    .competence-partner-row > .col:nth-child(4),
+    .competence-partner-row > .col:nth-child(5) {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
 }
