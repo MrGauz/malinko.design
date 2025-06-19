@@ -37,8 +37,13 @@
   <div class="row">
     <div class="col d-flex flex-column justify-content-center align-items-center">
       <h1 class="display-5 fw-bold">Email:</h1>
-      <h4><a href="#" class="fw-bold">denis@malinko.design</a></h4>
-      <a class="btn btn-dark border-0 rounded-0 mt-5 px-5 fs-5 fw-medium" href="mailto:denis@malinko.design">Contact</a>
+      <a href="#" id="copy-email" title="Copied!"
+         data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip">
+        <h4 class="fw-bold py-2 m-0">denis@malinko.design</h4>
+      </a>
+      <a href="mailto:denis@malinko.design" class="btn btn-dark border-0 rounded-0 mt-5 px-5 fs-5 fw-medium accent-btn">
+        Contact
+      </a>
     </div>
   </div>
 </div>
@@ -80,5 +85,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+<script src="/js/copy-email.js"></script>
 </body>
 </html>

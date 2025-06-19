@@ -90,8 +90,8 @@ footer {
     display: none;
 }
 
-#load-more:hover,
-#load-more:focus {
+.accent-btn:hover,
+.accent-btn:focus {
     background: #ffd600;
 }
 
@@ -176,4 +176,13 @@ footer {
 .contact-content {
     margin-top: 10rem;
     margin-bottom: 60vh;
+}
+
+.contact-address {
+    pointer-events: none;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgba(80, 80, 80);
+    --bs-tooltip-color: white;
 }
