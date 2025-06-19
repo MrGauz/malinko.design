@@ -39,6 +39,10 @@ a {
     color: #000;
 }
 
+li {
+    list-style-type: "– ";
+}
+
 footer {
     margin-top: 13rem;
 }
@@ -185,4 +189,8 @@ footer {
 .custom-tooltip {
     --bs-tooltip-bg: rgba(80, 80, 80);
     --bs-tooltip-color: white;
+}
+
+.datenschutz-text {
+    max-width: 50ch;
 }
