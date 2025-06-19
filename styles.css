@@ -68,6 +68,12 @@ footer {
     color: white;
 }
 
+.competence-image-header {
+    position: relative;
+    min-height: 120px;
+    background: url("/media/competence/header.png") center bottom / cover no-repeat;
+}
+
 .navbar-overlay {
     position: absolute;
     top: 0;
@@ -115,7 +121,7 @@ footer {
     max-width: 25ch;
 }
 
-/* small & below */
+/* small and below */
 .logo-footer {
     width: 270px;
 }
@@ -139,20 +145,35 @@ footer {
     height: 30px;
 }
 
+.competence-lead-text {
+    max-width: 43ch;
+}
+
 .competence-card-img-with-gif {
     aspect-ratio: 636 / 391;
     background: white;
     overflow: hidden;
 }
 
-/* extra small */
+/* extra small and up */
+.competence-text {
+    position: relative;
+    overflow: hidden;
+    margin-top: -2rem;
+}
+
 .competence-partner-logo {
     max-width: 270px;
     height: auto;
 }
 
-/* small and above */
+/* small and up */
 @media (min-width: 576px) {
+    .competence-text {
+        position: relative;
+        margin-top: -8rem;
+    }
+
     .competence-partner-logo {
         max-height: 80px;
         width: auto;
@@ -162,5 +183,12 @@ footer {
     .competence-partner-row > .col:nth-child(5) {
         flex: 0 0 50% !important;
         max-width: 50% !important;
+    }
+}
+
+/* medium and up */
+@media (min-width: 768px) {
+    .competence-text {
+        position: absolute;
     }
 }
