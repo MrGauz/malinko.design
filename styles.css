@@ -111,6 +111,10 @@ footer {
     opacity: 0.9;
 }
 
+.footer-text {
+    max-width: 28ch;
+}
+
 /* small & below */
 .logo-footer {
     width: 270px;
@@ -123,8 +127,8 @@ footer {
     }
 }
 
-/* large and up */
-@media (min-width: 992px) {
+/* extra large and up */
+@media (min-width: 1200px) {
     .logo-footer {
         width: 330px;
     }
