@@ -194,3 +194,57 @@ footer {
 .datenschutz-text {
     max-width: 50ch;
 }
+
+.impressum-wrapper {
+    padding-bottom: 250px !important;
+}
+
+.impressum-text-box {
+    max-width: 42ch;
+}
+
+.impressum-figure {
+    right: 0;
+    height: 450px;
+    z-index: 3;
+    margin-top: 15px;
+}
+
+.thought-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #000;
+    z-index: 2;
+}
+
+.thought-circle-lg {
+    width: 56px;
+    height: 56px;
+    bottom: -65px;
+    right: 185px;
+}
+
+.thought-circle-sm {
+    width: 32px;
+    height: 32px;
+    bottom: -100px;
+    right: 155px;
+}
+
+/* extra large and up */
+@media (min-width: 1200px) {
+    .impressum-figure {
+        right: -170px;
+    }
+
+    .thought-circle-lg {
+        bottom: -65px;
+        right: 15px;
+    }
+
+    .thought-circle-sm {
+        bottom: -100px;
+        right: -15px;
+    }
+}
