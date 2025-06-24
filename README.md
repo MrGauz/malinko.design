@@ -19,7 +19,6 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - [ ] 3D head
 - [ ] Clear metadata from media files
 - [ ] Check other browsers (Safari)
-- [ ] Social media
 - ballet school gif header
 
 ## Technologies Used
