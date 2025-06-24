@@ -22,7 +22,7 @@ server {
         limit_except GET HEAD { deny all; }
 
         # Hide '.html' in URLs, but serve .html files
-        try_files $uri $uri.html =404;
+        try_files $uri $uri.html $uri/ =404;
         autoindex off;
     }
 
