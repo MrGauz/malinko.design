@@ -234,17 +234,21 @@ footer {
 
 /* extra large and up */
 @media (min-width: 1200px) {
+    .impressum-wrapper {
+        padding-right: 300px;
+    }
+
     .impressum-figure {
-        right: -170px;
+        right: -250px;
     }
 
     .thought-circle-lg {
         bottom: -65px;
-        right: 15px;
+        right: -65px;
     }
 
     .thought-circle-sm {
         bottom: -100px;
-        right: -15px;
+        right: -95px;
     }
 }
