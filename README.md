@@ -11,16 +11,13 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 - [ ] Figure out project header responsiveness
 - [ ] Link preview head tags
-- [ ] Project page titles?
 - [ ] Alt texts
-- [ ] Link animations
 - [ ] 404 page
 - [ ] Link to GitHub repo on contacts page
 - [ ] Optimize images
 - [ ] README
 - [ ] 3D head
 - [ ] Clear metadata from media files
-- [ ] Footer text
 - [ ] Check other browsers (Safari)
 - [ ] Social media
 - ballet school gif header

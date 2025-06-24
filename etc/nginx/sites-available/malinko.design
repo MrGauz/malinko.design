@@ -21,8 +21,8 @@ server {
     location / {
         limit_except GET HEAD { deny all; }
 
-        # Prevent path traversal and directory listings
-        try_files $uri $uri/ =404;
+        # Hide '.html' in URLs, but serve .html files
+        try_files $uri $uri.html =404;
         autoindex off;
     }
 
