@@ -9,17 +9,17 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 ## TODOs
 
+- ballet school gif header
 - [ ] Figure out project header responsiveness
-- [ ] Link preview head tags
+- [ ] 3D head
+- [ ] Link preview head tags (ballet-school)
 - [ ] Alt texts
 - [ ] 404 page
-- [ ] Link to GitHub repo on contacts page
 - [ ] Optimize images
-- [ ] README
-- [ ] 3D head
 - [ ] Clear metadata from media files
 - [ ] Check other browsers (Safari)
-- ballet school gif header
+- [ ] README
+- [ ] Link to GitHub repo on contacts page
 
 ## Technologies Used
 
