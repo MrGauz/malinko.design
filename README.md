@@ -10,8 +10,6 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 ## TODOs
 
 - ballet school gif header
-- new favicon
-- Figure out project header responsiveness
 - 3D head
 - Alt texts
 - 404 page
@@ -30,7 +28,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 ## TODO: Setup 
 
-1. Clone the repository
+1. Clone this repository
 2. Open `index.html` in your web browser
 3. No build process required - this is a static website
 4. ???
