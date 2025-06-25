@@ -9,7 +9,6 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 ## TODOs
 
-- ballet school gif header
 - 3D head
 - Alt texts
 - 404 page
