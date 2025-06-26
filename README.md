@@ -14,6 +14,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - 404 page
 - Optimize images
 - Clear metadata from media files
+- integrity checks for all external js
 - Check other browsers (Safari)
 - README
 - Link to GitHub repo on contacts page

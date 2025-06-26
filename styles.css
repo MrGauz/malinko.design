@@ -84,6 +84,10 @@ footer {
     color: #8a8a8a;
 }
 
+.talking-head-container {
+    height: 700px;
+}
+
 .resize-link:hover,
 .resize-link:focus {
     transition: transform 0.2s ease-in-out;
