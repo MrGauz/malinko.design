@@ -19,11 +19,8 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - Check other browsers (Safari)
 - README
 - Link to GitHub repo on contacts page
-
-After release:
 - try new version of three.js
-- more slow/inert 3D motion
-
+  
 ## Technologies Used
 TODO: links
 
