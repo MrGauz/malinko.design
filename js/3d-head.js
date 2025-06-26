@@ -1,5 +1,11 @@
 let scene, camera, renderer, model;
 
+// Initial values
+let targetRotationX = 0.3;
+let targetRotationY = 0;
+let targetScale = 8.3;
+let targetY = -3.6;
+
 function init() {
     // Scene & Camera
     scene = new THREE.Scene();
@@ -24,9 +30,9 @@ function init() {
         objLoader.setMaterials(materials);
         objLoader.load('/media/talking-head/head.obj', (object) => {
             model = object;
-            model.scale.set(8.3, 8.3, 8.3);
-            model.position.y = -3.6;
-            model.rotation.x = 0.3;
+            model.scale.set(targetScale, targetScale, targetScale);
+            model.position.y = targetY;
+            model.rotation.x = targetRotationX;
             scene.add(model);
         });
     });
@@ -38,7 +44,6 @@ function init() {
 }
 
 function onMouseMove(event) {
-    if (!model) return;
     const rect = renderer.domElement.getBoundingClientRect();
     const mouseX = (event.clientX - rect.left) / rect.width;
     const mouseY = (event.clientY - rect.top) / rect.height;
@@ -46,24 +51,38 @@ function onMouseMove(event) {
     // Map mouse to small rotation range
     const minRotateX = -0.18;
     const maxRotateX = 0.4;
-    model.rotation.y = Math.max(-0.55, Math.min(0.55, (mouseX - 0.5) * 1.2)); // Left-right
-    model.rotation.x = Math.max(minRotateX, Math.min(maxRotateX, (mouseY - 0.5) * 0.6)); // Up-down
-    const rotationFactor = ((model.rotation.x - minRotateX) / (maxRotateX - minRotateX));
+    targetRotationY = Math.max(-0.55, Math.min(0.55, (mouseX - 0.5) * 1.2)); // Left-right
+    targetRotationX = Math.max(minRotateX, Math.min(maxRotateX, (mouseY - 0.5) * 0.6)); // Up-down
+    const rotationFactor = ((targetRotationX - minRotateX) / (maxRotateX - minRotateX));
 
     // Scale based on vertical rotation (inversely proportional)
     const minScale = 7.7;
     const maxScale = 9.5;
-    let scale = maxScale - (maxScale - minScale) * rotationFactor;
-    model.scale.set(scale, scale, scale);
+    targetScale = maxScale - (maxScale - minScale) * rotationFactor;
 
     // Go up & down based on vertical rotation (directly proportional)
     const minY = -4;
     const maxY = -3.4;
-    model.position.y = minY + (maxY - minY) * rotationFactor;
+    targetY = minY + (maxY - minY) * rotationFactor;
+}
+
+function interpolate(a, b, t) {
+    return a + (b - a) * t;
 }
 
 function animate() {
     requestAnimationFrame(animate);
+    if (model) {
+        const movementFactor = 0.05;
+        model.rotation.x = interpolate(model.rotation.x, targetRotationX, movementFactor);
+        model.rotation.y = interpolate(model.rotation.y, targetRotationY, movementFactor);
+        model.scale.set(
+            interpolate(model.scale.x, targetScale, movementFactor),
+            interpolate(model.scale.y, targetScale, movementFactor),
+            interpolate(model.scale.z, targetScale, movementFactor)
+        );
+        model.position.y = interpolate(model.position.y, targetY, movementFactor);
+    }
     renderer.render(scene, camera);
 }
 
