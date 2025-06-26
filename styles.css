@@ -43,6 +43,10 @@ li {
     list-style-type: "– ";
 }
 
+nav, img {
+    user-select: none;
+}
+
 footer {
     margin-top: 13rem;
 }
@@ -53,6 +57,10 @@ footer {
 
 .orange-bg {
     background-color: #BF7C49;
+}
+
+.almost-white {
+    color: #E5E5E5;
 }
 
 .logo-navbar {
@@ -86,6 +94,25 @@ footer {
 
 .talking-head-container {
     height: 700px;
+}
+
+.talking-head-controls {
+    z-index: 10;
+    user-select: none;
+}
+
+.talking-head-control {
+    width: 180px !important;
+}
+
+.talking-head-control:hover,
+.talking-head-control:focus {
+    cursor: pointer;
+}
+
+.control-active {
+    border-color: #ffd600 !important;
+    color: #ffd600 !important;
 }
 
 .resize-link:hover,

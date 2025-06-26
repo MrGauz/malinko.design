@@ -9,7 +9,7 @@ function init() {
     // Renderer
     renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
     renderer.setSize(headContainer.offsetWidth, headContainer.offsetHeight);
-    document.getElementById('3d-head-container').appendChild(renderer.domElement);
+    document.getElementById('3d-head').appendChild(renderer.domElement);
 
     // Light
     const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -67,5 +67,5 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-const headContainer = document.getElementById('3d-head-container');
+const headContainer = document.getElementById('3d-head');
 if (headContainer) init();

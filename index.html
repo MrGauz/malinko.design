@@ -41,8 +41,44 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="row pt-3 dark-bg talking-head-container">
-    <div id="3d-head-container" class="w-100"></div>
+  <div class="row position-relative dark-bg fs-3 almost-white text-center">
+    <p class="position-absolute bottom-0 fw-bold pb-5 talking-head-controls">Click to speak</p>
+
+    <div class="position-absolute bottom-0 end-0 pb-4 pe-4 w-auto talking-head-controls">
+      <p class="fw-bold text-start">Choose your style</p>
+      <div class="row row-cols-1 row-cols-md-2 g-3 fs-4">
+        <div id="3d-head-btn"
+             class="col border border-2 border-white rounded-5 py-1 px-3 me-3 mb-3 talking-head-control control-active">
+          <span>Dimensional</span>
+        </div>
+        <div id="dreamy-btn" class="col border border-2 border-white rounded-5 py-1 px-3 mb-3 talking-head-control">
+          <span>Dreamy</span>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-3 fs-4">
+        <div id="suprematism-btn"
+             class="col border border-2 border-white rounded-5 py-1 px-3 me-3 talking-head-control">
+          <span>Suprematism</span>
+        </div>
+        <div id="illustrative-btn" class="col border border-2 border-white rounded-5 py-1 px-3 talking-head-control">
+          <span>Illustrative</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="3d-head" class="w-100 p-0 talking-head-container"></div>
+    <!--TODO: <p>Nothing showing up yet?<br>Don’t worry — the 3D model is just<br>making a dramatic entrance.</p>-->
+
+    <img id="dreamy" src="/media/talking-head/dreamy.png" class="position-absolute p-0 talking-head-container d-none"
+         alt="Transparent overlay with clouds, bubbles, and roses for on top of Denis Malinko's 3D head">
+
+    <img id="suprematism" src="/media/talking-head/suprematism.png"
+         class="w-auto mx-auto p-0 talking-head-container d-none"
+         alt="Geometric illustration of Denis Malinko with a green shirt and abstract facial features">
+
+    <img id="illustrative" src="/media/talking-head/illustrative.png"
+         class="w-auto mx-auto p-0 talking-head-container d-none"
+         alt="Black and white sketch of Denis Malinko with a beard, mustache, and collared shirt">
   </div>
 </div>
 
@@ -256,5 +292,6 @@
 <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r79/examples/js/loaders/MTLLoader.js"></script>
 <script src="/js/3d-head.js"></script>
 <script src="/js/load-more.js"></script>
+<script src="/js/head-controls.js"></script>
 </body>
 </html>
