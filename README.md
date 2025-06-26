@@ -25,11 +25,13 @@ After release:
 - more slow/inert 3D motion
 
 ## Technologies Used
+TODO: links
 
 - HTML5
 - CSS3
 - Bootstrap 5.3
 - JavaScript
+- three.js
 
 ## TODO: Setup 
 
