@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const talkingHead = document.getElementById("talking-head");
     const speechBubble = document.getElementById("speech-bubble");
     const bubbleText = document.getElementById("bubble-text");
+    let bubbleTimeout;
 
     talkingHead.addEventListener("click", function (event) {
+        // If the click is on the style controls, do nothing
         if (event.target.closest('#style-controls')) {
             return;
         }
@@ -34,5 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Pick a random text from the array
         const randomIndex = Math.floor(Math.random() * texts.length);
         bubbleText.innerHTML = texts[randomIndex];
+
+        // Set a timeout to hide the speech bubble after 4 seconds
+        clearTimeout(bubbleTimeout);
+        bubbleTimeout = setTimeout(() => {
+            speechBubble.classList.add("d-none");
+        }, 4000);
     });
 });
