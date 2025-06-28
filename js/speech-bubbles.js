@@ -41,6 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         clearTimeout(bubbleTimeout);
         bubbleTimeout = setTimeout(() => {
             speechBubble.classList.add("d-none");
-        }, 4000);
+        }, 2000);
     });
 });
