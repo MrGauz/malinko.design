@@ -11,7 +11,7 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 - 3D head
 - Alt texts
-- <noscript> tags
+- noscript tags
 - 404 page
 - Optimize images
 - Clear metadata from media files
@@ -19,17 +19,16 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 - Check other browsers (Safari)
 - README
 - Link to GitHub repo on contacts page
-
-After release:
 - try new version of three.js
-- more slow/inert 3D motion
-
+  
 ## Technologies Used
+TODO: links
 
 - HTML5
 - CSS3
 - Bootstrap 5.3
 - JavaScript
+- three.js
 
 ## TODO: Setup 
 
