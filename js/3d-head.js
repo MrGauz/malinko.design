@@ -15,7 +15,7 @@ function init() {
     // Renderer
     renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
     renderer.setSize(headContainer.offsetWidth, headContainer.offsetHeight);
-    document.getElementById('3d-head').appendChild(renderer.domElement);
+    document.getElementById("3d-head").appendChild(renderer.domElement);
 
     // Light
     const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -24,11 +24,11 @@ function init() {
 
     // Load .obj & .mtl
     const mtlLoader = new THREE.MTLLoader();
-    mtlLoader.load('/media/talking-head/head.mtl', (materials) => {
+    mtlLoader.load("/media/talking-head/head.mtl", (materials) => {
         materials.preload();
         const objLoader = new THREE.OBJLoader();
         objLoader.setMaterials(materials);
-        objLoader.load('/media/talking-head/head.obj', (object) => {
+        objLoader.load("/media/talking-head/head.obj", (object) => {
             model = object;
             model.scale.set(targetScale, targetScale, targetScale);
             model.position.y = targetY;
@@ -38,7 +38,7 @@ function init() {
     });
 
     // Mouse move handler
-    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener("mousemove", onMouseMove);
 
     animate();
 }
@@ -86,5 +86,5 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-const headContainer = document.getElementById('3d-head');
+const headContainer = document.getElementById("3d-head");
 if (headContainer) init();

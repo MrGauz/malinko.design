@@ -1,7 +1,7 @@
-const emailLink = document.getElementById('copy-email');
-const tooltip = new bootstrap.Tooltip(emailLink, {trigger: 'manual'});
+const emailLink = document.getElementById("copy-email");
+const tooltip = new bootstrap.Tooltip(emailLink, {trigger: "manual"});
 
-emailLink.addEventListener('click', e => {
+emailLink.addEventListener("click", e => {
     e.preventDefault();
     navigator.clipboard
         .writeText(emailLink.textContent.trim())
@@ -9,5 +9,5 @@ emailLink.addEventListener('click', e => {
             tooltip.show();
             setTimeout(() => tooltip.hide(), 1500);
         })
-        .catch(err => console.error('Copy failed', err));
+        .catch(err => console.error("Copy failed", err));
 });
