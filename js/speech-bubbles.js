@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Texts for the speech bubble
     const texts = [
         "Hi, I’m Denis.",
         "Which problem are we solving?",
@@ -30,10 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.closest('#style-controls')) {
             return;
         }
-        // Toggle the visibility of the speech bubble
+        // Show the speech bubble with a random text from the array
         speechBubble.classList.remove("d-none");
-
-        // Pick a random text from the array
         const randomIndex = Math.floor(Math.random() * texts.length);
         bubbleText.innerHTML = texts[randomIndex];
 
