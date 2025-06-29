@@ -11,7 +11,6 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 - 3D head
 - Alt texts
-- noscript tags
 - 404 page
 - Optimize images
 - Clear metadata from media files

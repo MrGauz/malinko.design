@@ -224,6 +224,12 @@ footer {
     margin-bottom: 60vh;
 }
 
+.copy-icon {
+    height: 1.6em; /* Matches h4 text height */
+    width: auto;
+    transition: filter 0.12s, opacity 0.12s;
+}
+
 .custom-tooltip {
     --bs-tooltip-bg: rgba(80, 80, 80);
     --bs-tooltip-color: white;
