@@ -34,6 +34,7 @@ function init() {
             model.position.y = targetY;
             model.rotation.x = targetRotationX;
             scene.add(model);
+            document.getElementById("head-loading")?.classList.add("d-none");
         });
     });
 

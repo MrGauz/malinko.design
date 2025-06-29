@@ -29,6 +29,7 @@
 
 /* </editor-fold> */
 
+/* <editor-fold desc="HTML Tag Styles"> */
 html, body {
     font-family: 'Apparat', Arial, sans-serif;
     font-weight: 400;
@@ -50,7 +51,9 @@ nav, img {
 footer {
     margin-top: 13rem;
 }
+/* </editor-fold> */
 
+/* <editor-fold desc="Re-usable Styles"> */
 .dark-bg {
     background: #232323;
 }
@@ -88,12 +91,29 @@ footer {
     z-index: 1000;
 }
 
+.accent-btn:hover,
+.accent-btn:focus {
+    background: #ffd600;
+}
+
 .muted {
     color: #8a8a8a;
 }
 
+.resize-link:hover,
+.resize-link:focus {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.01);
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Index / Project Page"> */
 .talking-head-container {
     height: 700px;
+}
+
+#head-loading {
+    z-index: 11;
 }
 
 .bubble-top {
@@ -137,21 +157,12 @@ footer {
     color: #ffd600 !important;
 }
 
-.resize-link:hover,
-.resize-link:focus {
-    transition: transform 0.2s ease-in-out;
-    transform: scale(1.01);
-}
-
 .hidden-card {
     display: none;
 }
+/* </editor-fold> */
 
-.accent-btn:hover,
-.accent-btn:focus {
-    background: #ffd600;
-}
-
+/* <editor-fold desc="Projects Pages"> */
 .nav-arrow {
     width: 180px;
 }
@@ -161,41 +172,9 @@ footer {
         width: 250px;
     }
 }
+/* </editor-fold> */
 
-.dashed-divider {
-    border: none;
-    border-top: 5px dashed #000;
-    opacity: 0.9;
-}
-
-.footer-text {
-    max-width: 25ch;
-}
-
-/* small and below */
-.logo-footer {
-    width: 270px;
-}
-
-/* medium and up */
-@media (min-width: 768px) {
-    .logo-footer {
-        width: 230px;
-    }
-}
-
-/* extra large and up */
-@media (min-width: 1200px) {
-    .logo-footer {
-        width: 330px;
-    }
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-}
-
+/* <editor-fold desc="Other Pages"> */
 .competence-card-img-with-gif {
     aspect-ratio: 636 / 391;
     background: white;
@@ -301,3 +280,40 @@ footer {
         right: -95px;
     }
 }
+/* </editor-fold> */
+
+/* <editor-fold desc="Footer"> */
+.dashed-divider {
+    border: none;
+    border-top: 5px dashed #000;
+    opacity: 0.9;
+}
+
+.footer-text {
+    max-width: 25ch;
+}
+
+/* small and below */
+.logo-footer {
+    width: 270px;
+}
+
+/* medium and up */
+@media (min-width: 768px) {
+    .logo-footer {
+        width: 230px;
+    }
+}
+
+/* extra large and up */
+@media (min-width: 1200px) {
+    .logo-footer {
+        width: 330px;
+    }
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+/* </editor-fold> */
