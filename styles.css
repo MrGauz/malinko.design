@@ -215,12 +215,6 @@ footer {
         max-height: 80px;
         width: auto;
     }
-
-    .competence-partner-row > .col:nth-child(4),
-    .competence-partner-row > .col:nth-child(5) {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-    }
 }
 
 .contact-content {
