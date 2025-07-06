@@ -51,6 +51,7 @@ nav, img {
 footer {
     margin-top: 13rem;
 }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Re-usable Styles"> */
@@ -109,6 +110,7 @@ footer {
     transition: transform 0.2s ease-in-out;
     transform: scale(1.01);
 }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Index / Project Page"> */
@@ -170,6 +172,7 @@ footer {
 .hidden-card {
     display: none;
 }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Projects Pages"> */
@@ -182,6 +185,7 @@ footer {
         width: 250px;
     }
 }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Other Pages"> */
@@ -296,6 +300,7 @@ footer {
         right: -95px;
     }
 }
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Footer"> */
@@ -332,4 +337,5 @@ footer {
     width: 30px;
     height: 30px;
 }
+
 /* </editor-fold> */
