@@ -47,24 +47,24 @@
 </nav>
 
 <div id="talking-head" class="container-fluid">
-  <div class="row position-relative dark-bg fs-3 almost-white text-center">
-    <p class="position-absolute bottom-0 fw-bold pb-5 talking-head-overlays">Click to speak</p>
-    <div class="position-absolute top-0 start-50 w-auto ms-5 ps-5 talking-head-overlays">
-      <div id="speech-bubble" class="d-flex flex-column align-items-center fs-3 d-none">
-        <img src="/media/talking-head/bubble-top.png" class="d-block d-lg-none bubble-tail"
+  <div class="row position-relative dark-bg fs-5 fs-lg-3 almost-white text-center">
+    <p class="position-absolute fw-bold pb-5 click-to-speak">Click to speak</p>
+    <div class="position-absolute start-50 w-auto mb-5 mb-lg-0 ms-lg-5 ps-lg-5 speech-bubble">
+      <div id="speech-bubble" class="d-flex flex-column align-items-center d-none">
+        <img src="/media/talking-head/bubble-top.png" class="d-block d-lg-none bubble-part"
              alt="Speech bubble tail pointing upward">
         <div class="position-relative">
-          <img src="/media/talking-head/bubble.png" class="text-bubble" alt="The top part of a speech bubble">
-          <p id="bubble-text" class="bubble-text"></p>
+          <img src="/media/talking-head/bubble.png" class="bubble-part" alt="The top part of a speech bubble">
+          <p id="bubble-text" class="bubble-text">Hi, I’m Denis.</p>
         </div>
-        <img src="/media/talking-head/bubble-bottom.png" class="d-none d-lg-block bubble-tail"
+        <img src="/media/talking-head/bubble-bottom.png" class="d-none d-lg-block bubble-part"
              alt="Speech bubble tail pointing downward">
       </div>
     </div>
 
-    <div id="style-controls" class="position-absolute bottom-0 end-0 pb-4 pe-4 w-auto talking-head-overlays">
+    <div id="style-controls" class="position-absolute bottom-0 pb-4 pe-4 w-auto style-controls">
       <p class="fw-bold text-start">Choose your style</p>
-      <div class="row row-cols-1 row-cols-md-2 g-3 fs-4">
+      <div class="row row-cols-1 row-cols-md-2 g-3 fs-5 fs-lg-4">
         <div id="3d-head-btn"
              class="col border border-2 border-white rounded-5 py-1 px-3 me-3 mb-3 talking-head-control control-active">
           <span>Dimensional</span>
@@ -73,7 +73,7 @@
           <span>Dreamy</span>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-2 g-3 fs-4">
+      <div class="row row-cols-1 row-cols-md-2 g-3 fs-5 fs-lg-4">
         <div id="suprematism-btn"
              class="col border border-2 border-white rounded-5 py-1 px-3 me-3 talking-head-control">
           <span>Suprematism</span>
