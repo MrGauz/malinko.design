@@ -111,6 +111,16 @@ footer {
     transform: scale(1.01);
 }
 
+@media (min-width: 992px) {
+    .fs-lg-3 {
+        font-size: 1.75rem !important;
+    }
+
+    .fs-lg-4 {
+        font-size: 1.5rem !important;
+    }
+}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Index / Project Page"> */
@@ -154,14 +164,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-    .fs-lg-3 {
-        font-size: 1.75rem !important;
-    }
-
-    .fs-lg-4 {
-        font-size: 1.5rem !important;
-    }
-
     .talking-head-container {
         height: 700px;
     }
