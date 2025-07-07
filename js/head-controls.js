@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    setDreamyImage();
+    window.addEventListener("resize", setDreamyImage);
+
     const controls = document.querySelectorAll(".talking-head-control");
     const dreamy = document.getElementById("dreamy");
     const suprematism = document.getElementById("suprematism");
@@ -30,3 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function setDreamyImage() {
+    const dreamy = document.getElementById("dreamy");
+    if (!dreamy) return;
+    if (window.innerWidth < 768) {
+        // Use smaller image for mobile devices
+        dreamy.src = "/media/talking-head/dreamy-sm.png";
+    } else {
+        // Medium or large screen settings
+        dreamy.src = "/media/talking-head/dreamy.png";
+    }
+}
