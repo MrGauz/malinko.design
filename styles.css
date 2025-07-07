@@ -135,12 +135,12 @@ footer {
     z-index: 11;
 }
 
-.bubble-top {
+.text-bubble {
     height: 95px;
     width: auto;
 }
 
-.bubble-bottom {
+.bubble-tail {
     height: 55px;
     width: auto;
 }
