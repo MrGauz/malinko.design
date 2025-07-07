@@ -1,10 +1,42 @@
 let scene, camera, renderer, model;
 
-// Initial values
-let targetRotationX = 0.3;
+const headContainer = document.getElementById("3d-head");
+
+// 3D model parameters
+let minRotateX, targetRotationX, maxRotateX;
 let targetRotationY = 0;
-let targetScale = 8.3;
-let targetY = -3.6;
+let minScale, targetScale, maxScale;
+let minY, targetY, maxY;
+
+
+// Initial values
+if (window.innerWidth < 1024) {
+    // Mobile or small screen settings
+    minRotateX = -0.18;
+    targetRotationX = 0.3;
+    maxRotateX = 0.4;
+
+    minScale = 6.5;
+    targetScale = 6.8;
+    maxScale = 7.6;
+
+    minY = -3.5;
+    targetY = -3;
+    maxY = -2.8;
+} else {
+    // Desktop or larger screen settings
+    minRotateX = -0.18;
+    targetRotationX = 0.3;
+    maxRotateX = 0.4;
+
+    minScale = 7.7;
+    targetScale = 8.3;
+    maxScale = 9.5;
+
+    minY = -4;
+    targetY = -3.6;
+    maxY = -3.4;
+}
 
 function init() {
     // Scene & Camera
@@ -15,7 +47,7 @@ function init() {
     // Renderer
     renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
     renderer.setSize(headContainer.offsetWidth, headContainer.offsetHeight);
-    document.getElementById("3d-head").appendChild(renderer.domElement);
+    headContainer.appendChild(renderer.domElement);
 
     // Light
     const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -49,25 +81,20 @@ function onMouseMove(event) {
     const mouseX = (event.clientX - rect.left) / rect.width;
     const mouseY = (event.clientY - rect.top) / rect.height;
 
-    // Map mouse to small rotation range
-    const minRotateX = -0.18;
-    const maxRotateX = 0.4;
+    // Map mouse to a small rotation range
     targetRotationY = Math.max(-0.55, Math.min(0.55, (mouseX - 0.5) * 1.2)); // Left-right
     targetRotationX = Math.max(minRotateX, Math.min(maxRotateX, (mouseY - 0.5) * 0.6)); // Up-down
     const rotationFactor = ((targetRotationX - minRotateX) / (maxRotateX - minRotateX));
 
     // Scale based on vertical rotation (inversely proportional)
-    const minScale = 7.7;
-    const maxScale = 9.5;
     targetScale = maxScale - (maxScale - minScale) * rotationFactor;
 
     // Go up & down based on vertical rotation (directly proportional)
-    const minY = -4;
-    const maxY = -3.4;
     targetY = minY + (maxY - minY) * rotationFactor;
 }
 
 function interpolate(a, b, t) {
+    // Linear interpolation to change values smoothly
     return a + (b - a) * t;
 }
 
@@ -87,5 +114,4 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-const headContainer = document.getElementById("3d-head");
 if (headContainer) init();
