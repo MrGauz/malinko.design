@@ -113,9 +113,9 @@ footer {
 
 /* small and up */
 @media (min-width: 576px) {
-  .fs-sm-5 {
-    font-size: 1.25rem !important;
-  }
+    .fs-sm-5 {
+        font-size: 1.25rem !important;
+    }
 }
 
 /* large and up */
@@ -139,8 +139,16 @@ footer {
 }
 
 .talking-head-container {
-    width: 100%;
+    width: auto;
     height: 450px;
+}
+
+/* small and below */
+@media (max-width: 575px) {
+    .head-img {
+        width: auto !important;
+        max-width: none;
+    }
 }
 
 .click-to-speak {
