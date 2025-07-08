@@ -111,6 +111,13 @@ footer {
     transform: scale(1.01);
 }
 
+/* small and up */
+@media (min-width: 576px) {
+  .fs-sm-5 {
+    font-size: 1.25rem !important;
+  }
+}
+
 /* large and up */
 @media (min-width: 992px) {
     .fs-lg-3 {
@@ -159,9 +166,15 @@ footer {
 
 .bubble-part {
     height: auto;
-    width: 300px;
+    width: 100%;
     z-index: 10;
     user-select: none;
+}
+
+@media (min-width: 640px) {
+    .bubble-part {
+        width: 300px;
+    }
 }
 
 /* large and up */
@@ -203,7 +216,7 @@ footer {
     color: #252525;
     font-weight: bold;
     text-align: center;
-    width: 20ch;
+    width: 100%;
 }
 
 .talking-head-control {

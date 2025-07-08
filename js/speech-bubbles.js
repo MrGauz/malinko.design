@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "Who are we talking to?",
         "It depends.",
         "Maybe yes, maybe not.",
-        "Do we have documentation<br>for that?",
         "Canva? Hmm...",
         "Computer says no.",
         "That looks interesting.",
@@ -20,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "Clicking the button<br>is fun, right?",
         "Very nice.",
     ];
+    // Fits only on larger screens
+    if (window.innerWidth >= 768) {
+        texts.push("Do we have documentation<br>for that?");
+    }
 
     const talkingHead = document.getElementById("talking-head");
     const speechBubble = document.getElementById("speech-bubble");
