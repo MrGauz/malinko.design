@@ -13,13 +13,6 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 >
 > — [danielbilyk](https://github.com/danielbilyk/danielbilyk)
 
-## TODOs
-
-- 404 page
-- Check other browsers (Safari)
-- README
-- Link to GitHub repo on contacts page
-
 ---
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -39,3 +32,11 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 ## License
 
 All rights reserved. This project and its contents are protected by copyright law.
+
+---
+
+## TODOs
+
+- 404 page
+- Check other browsers (Safari)
+- Link to GitHub repo on contacts page
