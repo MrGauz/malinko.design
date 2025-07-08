@@ -9,32 +9,17 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 
 ## TODOs
 
-- 3D head
-- Alt texts
 - 404 page
 - Clear metadata from media files
-- integrity checks for all external js
 - Check other browsers (Safari)
 - README
 - Link to GitHub repo on contacts page
-- try new version of three.js
   
 ## Technologies Used
-TODO: links
 
 - HTML5
-- CSS3
-- Bootstrap 5.3
-- JavaScript
-- three.js
-
-## TODO: Setup 
-
-1. Clone this repository
-2. Open `index.html` in your web browser
-3. No build process required - this is a static website
-4. ???
-5. Profit!
+- CSS3, [Bootstrap](https://getbootstrap.com/)
+- JavaScript, [three.js](https://threejs.org/)
 
 ## License
 
