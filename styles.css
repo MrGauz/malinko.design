@@ -111,6 +111,7 @@ footer {
     transform: scale(1.01);
 }
 
+/* large and up */
 @media (min-width: 992px) {
     .fs-lg-3 {
         font-size: 1.75rem !important;
@@ -163,6 +164,7 @@ footer {
     user-select: none;
 }
 
+/* large and up */
 @media (min-width: 992px) {
     .talking-head-container {
         height: 700px;
@@ -205,12 +207,19 @@ footer {
 }
 
 .talking-head-control {
-    width: 180px !important;
+    width: 140px !important;
 }
 
 .talking-head-control:hover,
 .talking-head-control:focus {
     cursor: pointer;
+}
+
+/* medium and up */
+@media (min-width: 768px) {
+    .talking-head-control {
+        width: 180px !important;
+    }
 }
 
 .control-active {
@@ -229,6 +238,7 @@ footer {
     width: 180px;
 }
 
+/* medium and up */
 @media (min-width: 768px) {
     .nav-arrow {
         width: 250px;
