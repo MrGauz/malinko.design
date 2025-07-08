@@ -1,8 +1,10 @@
-# Denis Malinko's Design Portfolio
+# Denis Malinko's Design Portfolio 👨🏻‍🎨
 
-`TODO: quote from Dani`
+> `TODO: quote from Dani`
+> 
+> — [danielbilyk](https://github.com/danielbilyk/danielbilyk)
 
-A modern, responsive portfolio website showcasing the work of Malinko Design, featuring a collection of design projects
+A modern, responsive portfolio website showcasing the work of Denis Malinko, featuring a collection of design projects
 across various disciplines including graphic design, industrial design, UX/UI, and more.
 
 ## TODOs
