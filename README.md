@@ -9,7 +9,7 @@
 A modern, responsive portfolio website showcasing the work of Denis Malinko, featuring a collection of design projects
 across various disciplines including graphic design, industrial design, UX/UI, and more.
 
-> `TODO: quote from Dani`
+> I’ve known him for more than a decade. He constantly reinvents himself. And he always delivers.
 >
 > — [danielbilyk](https://github.com/danielbilyk/danielbilyk)
 
