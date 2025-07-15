@@ -38,4 +38,3 @@ All rights reserved. This project and its contents are protected by copyright la
 ## TODOs
 
 - Check other browsers (Safari)
-- Link to GitHub repo on contacts page
