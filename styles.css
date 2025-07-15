@@ -299,7 +299,7 @@ footer {
 
 .contact-content {
     margin-top: 10rem;
-    margin-bottom: 45vh;
+    margin-bottom: 35vh;
 }
 
 .copy-icon {
@@ -311,6 +311,11 @@ footer {
 .custom-tooltip {
     --bs-tooltip-bg: rgba(80, 80, 80);
     --bs-tooltip-color: white;
+}
+
+.github-icon {
+    height: 1em;
+    width: auto;
 }
 
 .datenschutz-text {
