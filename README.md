@@ -37,6 +37,5 @@ All rights reserved. This project and its contents are protected by copyright la
 
 ## TODOs
 
-- 404 page
 - Check other browsers (Safari)
 - Link to GitHub repo on contacts page
