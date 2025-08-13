@@ -225,6 +225,7 @@ footer {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    line-height: 0.95;
 }
 
 .talking-head-control {
@@ -390,7 +391,7 @@ footer {
 }
 
 .footer-text {
-    max-width: 25ch;
+    max-width: 26ch;
 }
 
 /* small and below */
