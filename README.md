@@ -32,9 +32,3 @@ across various disciplines including graphic design, industrial design, UX/UI, a
 ## License
 
 All rights reserved. This project and its contents are protected by copyright law.
-
----
-
-## TODOs
-
-- Check other browsers (Safari)
